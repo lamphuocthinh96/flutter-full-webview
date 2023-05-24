@@ -21,7 +21,7 @@ WebViewController controller = WebViewController()
       onPageFinished: (String url) {},
       onWebResourceError: (WebResourceError error) {},
       onNavigationRequest: (NavigationRequest request) {
-        if (request.url.startsWith('https://www.youtube.com/')) {
+        if (request.url.startsWith('https://play.b52.gg')) {
           return NavigationDecision.prevent;
         }
         return NavigationDecision.navigate;
@@ -61,7 +61,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'My WebView'),
+      home: const MyHomePage(title: 'B52'),
       /*home: Scaffold(
         appBar: AppBar(
           title: Text("TutorialKart - Flutter WebView"),
