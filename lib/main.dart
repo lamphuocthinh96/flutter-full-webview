@@ -61,7 +61,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'My WebView'),
+      home: const MyHomePage(title: 'B52'),
       /*home: Scaffold(
         appBar: AppBar(
           title: Text("TutorialKart - Flutter WebView"),
