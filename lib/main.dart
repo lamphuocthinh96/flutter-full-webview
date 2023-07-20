@@ -28,7 +28,7 @@ WebViewController controller = WebViewController()
       },
     ),
   )
-  ..loadRequest(Uri.parse('https://play.b52.gg'));
+  ..loadRequest(Uri.parse('https://play.b52.tips'));
 class MyApp extends StatelessWidget {
   // final WebViewController _controller;
   const MyApp({super.key});
