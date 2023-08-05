@@ -21,14 +21,14 @@ WebViewController controller = WebViewController()
       onPageFinished: (String url) {},
       onWebResourceError: (WebResourceError error) {},
       onNavigationRequest: (NavigationRequest request) {
-        if (request.url.startsWith('https://play.b52.gg')) {
+        if (request.url.startsWith('https://suvip.nl/play/')) {
           return NavigationDecision.prevent;
         }
         return NavigationDecision.navigate;
       },
     ),
   )
-  ..loadRequest(Uri.parse('https://play.b52.tips'));
+  ..loadRequest(Uri.parse('https://suvip.nl/play/'));
 class MyApp extends StatelessWidget {
   // final WebViewController _controller;
   const MyApp({super.key});
@@ -61,7 +61,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'B52'),
+      home: const MyHomePage(title: 'SuVip'),
       /*home: Scaffold(
         appBar: AppBar(
           title: Text("TutorialKart - Flutter WebView"),
@@ -136,6 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
       AndroidWebViewController.enableDebugging(true);
       (controller.platform as AndroidWebViewController)
           .setMediaPlaybackRequiresUserGesture(false);
+      // controller.c
     }
     /*return Scaffold(
       appBar: AppBar(
