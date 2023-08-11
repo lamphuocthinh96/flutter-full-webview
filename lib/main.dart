@@ -21,14 +21,14 @@ WebViewController controller = WebViewController()
       onPageFinished: (String url) {},
       onWebResourceError: (WebResourceError error) {},
       onNavigationRequest: (NavigationRequest request) {
-        if (request.url.startsWith('https://suvip.nl/play/')) {
+        if (request.url.startsWith('https://b52k.lat/')) {
           return NavigationDecision.prevent;
         }
         return NavigationDecision.navigate;
       },
     ),
   )
-  ..loadRequest(Uri.parse('https://suvip.nl/play/'));
+  ..loadRequest(Uri.parse('https://b52k.lat/'));
 class MyApp extends StatelessWidget {
   // final WebViewController _controller;
   const MyApp({super.key});
@@ -61,7 +61,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'SuVip'),
+      home: const MyHomePage(title: 'B52'),
       /*home: Scaffold(
         appBar: AppBar(
           title: Text("TutorialKart - Flutter WebView"),
